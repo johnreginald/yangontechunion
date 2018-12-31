@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/blog`,
+  pathPrefix: `/yangontechunion`,
   siteMetadata: {
     title: `Yangon Tech Union`,
     author: `Htet Wai Yan Soe`,
