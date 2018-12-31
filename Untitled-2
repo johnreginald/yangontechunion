@@ -1,0 +1,11 @@
+featuredImage {
+                  //    childImageSharp {
+                  //      sizes(maxWidth: 630) {
+                  //        ...GatsbyImageSharpSizes
+                  //      }
+                  //    }
+                  //  }
+
+{/* <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} /> */}
+
+<Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />

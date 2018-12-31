@@ -1,0 +1,79 @@
+.posts {
+    @apply .flex .flex-wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.column {
+    @apply .w-1/2 .px-5;
+}
+.post {
+    @apply .bg-white .mb-10 .shadow-md .rounded .overflow-hidden;
+
+    .content {
+        @apply .px-10 .pb-5;
+    }
+
+    .title {
+        margin-top: 0;
+        a {
+            color: #333;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary-color;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    .body {
+        line-height: 1.8em;
+    }
+    
+    .date {
+        @apply .mt-2 .mb-5;
+    }
+
+    .feature-image {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.single-post {
+    .title {
+        @apply .py-10;
+        background: $hover-color;
+        background-position: top center;
+        background-size: cover;
+        
+        h1 {
+            margin-top: 0;
+        }
+        h1, p {
+            @apply .text-center .text-white;
+        }
+    }
+    .date {
+        @apply .mt-12;
+        font-family: $title-font;
+    }
+    .content {
+        @apply .mb-12 .px-10 .py-10 .bg-white .shadow-md .rounded;
+    }
+    .gatsby-resp-image-wrapper {
+        @apply .my-10;
+    }
+}
+.tags {
+    @apply .my-5;
+
+    .tag {
+        @apply .inline-block .rounded .px-3 .py-1 text-sm .font-semibold .text-grey-darker .mr-2 .no-underline;
+        background: $primary-color;
+        color: white;
+
+        &:hover {
+            @apply .shadow-md;
+        }
+    }
+}

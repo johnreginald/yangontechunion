@@ -1,0 +1,32 @@
+.header {
+    @apply .shadow .bg-white;
+}
+.logo {
+    @apply .no-underline .uppercase .font-bold .shadow-none .text-lg;
+
+    font-family: $title-font;
+    color: $primary-color;
+
+    &:hover {
+        color: $hover-color;
+        transition: all 0.3s ease;
+    }
+}
+.links {
+    @apply .pl-0 .block .list-reset .text-right .select-none;
+
+    .item {
+        @apply .inline-block .pr-10 .mb-0;
+
+        a {
+            @apply .text-base .uppercase .no-underline .font-bold .shadow-none;
+            font-family: $title-font;
+            color: #333;
+
+            &:hover {
+                color: $primary-color;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

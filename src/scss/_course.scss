@@ -1,0 +1,51 @@
+@mixin banner($color) {
+    @apply .text-center .py-10;
+    background: $color;
+
+    h1 {
+        @apply .p-20 .m-0 .text-white .text-center;
+    }
+}
+.banner {
+    @apply .text-center .py-20;
+    background: url('/images/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .course {
+        font-family: $title-font;
+
+        .name {
+            @apply .pb-10 .text-4xl .text-white;
+        }
+        .slogan {
+            @apply .text-lg .text-white;
+        }
+    }
+}
+.about {
+    @apply .border-b .border-grey-light .text-center .pb-4 .mt-0 .pt-0;
+}
+
+.course-banner {
+    @include banner(#415EA5);
+    background: url('/images/banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.level-1 {
+    @include banner(#415EA5);
+}
+.level-2 {
+    @include banner(#F69D50);
+}
+.schedule {
+    @include banner(#319195);
+}
+.contact {
+    @include banner(#319195);
+}
+.course {
+    @apply .my-10;
+}

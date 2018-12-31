@@ -1,0 +1,51 @@
+body {
+  margin: 0 auto;
+  font-family: $content-font;
+  line-height: 1.7em;
+  color: #555;
+  background: #f8f8f8;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font;
+  margin-top: 1em;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+p {
+  @apply .mb-5;
+}
+h1, h2, h3, h4, h5, h6, strong {
+  color: #333;
+}
+ol, ul {
+  @apply .ml-5;
+}
+table {
+  @apply .w-full .border .text-left .border-collapse;
+
+  tr, td, th {
+    @apply .border .py-2;
+  }
+}
+a {
+  color: $primary-color; 
+  @apply .no-underline;
+}
+a:visited {
+  color: $primary-color;
+}
+hr {
+  @apply .border-t .my-5 .border-grey-light;
+}
+.footer {
+  @apply .py-20 .bg-black .text-white .text-center;
+}
+.card {
+  @apply .mb-12 .px-10 .py-10 .bg-white .shadow-md .rounded;
+}
+.mm {
+  font-family:'Ours-Unicode';
+  line-height: 2.3em;
+  font-weight: 300;
+  text-align: justify;
+}
