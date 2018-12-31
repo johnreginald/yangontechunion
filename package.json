@@ -42,6 +42,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.14.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -55,6 +56,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build:css": "tailwind build ./src/components/Layout.scss -c ./tailwind.config.js -o ./src/components/Layout.css",
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
